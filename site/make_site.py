@@ -51,7 +51,7 @@ for name in plots_names: # construct the appropriate inclusion of the html plots
 # </iframe>
 # '''.format(name[:-5], plots_path+name))
     str.append('''
-## {}
+## [{}]({})
 <iframe src="{}"
 sandbox="allow-same-origin allow-scripts"
 width="100%"
@@ -60,7 +60,7 @@ scrolling="yes"
 seamless="seamless"
 frameborder="10">
 </iframe>
-'''.format(name[:-5], plots_path+name))
+'''.format(name[:-5], plots_path+name,plots_path+name))
 
 
 text = text+"".join(str) # Join with the markdown header
