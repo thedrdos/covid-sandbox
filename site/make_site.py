@@ -79,7 +79,8 @@ output_file.write(html)
 output_file.close();
 
 # Open the webpage to check it locally
-webbrowser.open("file://"+os.path.abspath(html_file))
+# webbrowser.open("file://"+os.path.abspath(html_file))
+webbrowser.open("https://covid-sandbox.netlify.com")
 
 # Post to the website
 os.system('git ca "Updated using script on: '+now+'"'+'; git push')
